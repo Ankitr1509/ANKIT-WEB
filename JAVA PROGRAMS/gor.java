@@ -76,7 +76,7 @@ if(j==1)
 {
 for(m=0;m<=50;m++)
 {
-System.out.println("What vegetable you want to remove? \n");
+System.out.println("Which vegetable you want to remove? \n");
 p[m]=s.next();
 System.out.println("How much quantity you want to remove? \n");
 g=s.nextInt();

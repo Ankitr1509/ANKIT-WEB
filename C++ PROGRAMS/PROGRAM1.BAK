@@ -1,0 +1,35 @@
+/* An object of class can be passed by reference. */
+#include<iostream.h>
+#include<conio.h>
+class stud
+{
+public:
+int r;
+char n[30];
+float s;
+};
+void accept(stud &); /*Functions must be declared after
+		       the class declaration*/
+int main()
+{
+stud o;
+clrscr();ff
+accept(o);
+cout<<"\nThe student details are: "<<endl;
+cout<<"Roll Number:"<<o.r<<endl;
+cout<<"Name:"<<o.n<<endl;
+cout<<"Score:"<<o.s<<endl;
+getch();
+return 0;
+}
+void accept(stud &o1)
+{
+cout<<"Please enter student details."<<endl;
+cout<<"\nEnter roll no. of student:";
+cin>>o1.r;
+cout<<"\nEnter the name of student:";
+cin>>o1.n;
+cout<<"\nEnter the score of student:";
+cin>>o1.s;
+return;
+}
